@@ -1,0 +1,131 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #333;
+  padding: 10px;
+  position: relative;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-content h1 {
+  margin: 0;
+}
+
+#login-section form {
+  display: flex;
+}
+
+#login-section input {
+  padding: 5px;
+  margin-right: 5px;
+  color: black;
+}
+
+#login-section button {
+  padding: 5px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#login-section button:hover {
+  background-color: #45a049;
+}
+
+#info-section {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: 1px solid white;
+  padding: 10px;
+  background-color: #333;
+}
+
+footer {
+  background-color: #333;
+  color: #ccc;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: right;
+}
+
+.footer-text {
+  margin: 0;
+  font-size: 12px;
+  padding-right: 10px;
+}
+
+main {
+  padding: 20px;
+  padding-bottom: 60px; /* To make space for footer */
+}
+
+#calendar-section,
+#time-section,
+#description-section,
+#confirmation-box {
+  margin-bottom: 20px;
+}
+
+#date-picker,
+textarea {
+  padding: 10px;
+  font-size: 16px;
+}
+
+#time-picker {
+  display: flex;
+  flex-direction: column;
+}
+
+.time-slot {
+  margin-bottom: 5px;
+}
+
+button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#confirmation-box {
+  border: 1px solid white;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #333;
+}
+
+#view-list {
+  display: block;
+  margin-top: 10px;
+  color: #4caf50;
+  text-decoration: none;
+}
+
+#view-list:hover {
+  text-decoration: underline;
+}

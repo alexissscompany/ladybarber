@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Citas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <div class="header-content">
+      <h1>Leydi Barber Company</h1>
+      <div id="login-section">
+        <form id="login-form">
+          <input type="text" id="username" placeholder="Usuario" required>
+          <input type="password" id="password" placeholder="Contraseña" required>
+          <button type="submit">Iniciar Sesión</button>
+        </form>
+      </div>
+      <div id="info-section" style="display:none;">
+        <h2>Información de la Cita</h2>
+        <div id="info-details"></div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div id="calendar-section">
+      <h2>Selecciona una Fecha</h2>
+      <input type="date" id="date-picker">
+      <div id="date-warning"></div>
+    </div>
+
+    <div id="time-section" style="display:none;">
+      <h2>Selecciona una Hora</h2>
+      <div id="time-picker"></div>
+    </div>
+
+    <div id="description-section" style="display:none;">
+      <h2>Descripción</h2>
+      <textarea id="description" rows="4" cols="50" placeholder="Escribe una descripción..."></textarea>
+    </div>
+
+    <button id="submit-button" style="display:none;">Enviar Solicitud</button>
+    <div id="confirmation-box" style="display:none;">
+      <h2>Confirmación de Cita</h2>
+      <div id="confirmation-details"></div>
+      <a href="list.html" id="view-list" style="display:none;">Ver Lista de Citas</a>
+    </div>
+  </main>
+
+  <footer>
+    <p class="footer-text">Alexis Desarrollador Company</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
